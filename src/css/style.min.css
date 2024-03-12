@@ -8,31 +8,38 @@
   src: url("../fonts/muller-medium.svg#muller-medium") format("svg");
 }
 body {
+  font-family: "Muller-Medium";
   background-color: #fff;
   margin: 0;
   height: 100vh;
+  text-align: left;
 }
 
 .promo {
-  padding: 20px;
+  position: relative;
+  height: 100vh;
+}
+.promo .logo {
+  position: absolute;
+  top: 50px;
+  left: 110px;
 }
 .promo .descr {
   width: 50vw;
-  vertical-align: top;
-  padding: 28px 0 0 90px;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 .promo .descr .item {
-  margin-top: 205px;
+  padding: 120px 60px 120px 105px;
 }
 .promo .descr .item .title {
-  font-family: "Muller-Medium";
   font-size: 64px;
   font-weight: 400;
   line-height: 64px;
 }
 .promo .descr .item .subtitle {
   margin-top: 30px;
-  font-family: "Muller-Medium";
   font-size: 21px;
   font-weight: 200;
   line-height: 30px;
@@ -48,7 +55,6 @@ body {
   border-radius: 50px;
   background-color: #F9572E;
   color: #fff;
-  font-family: "Muller-Medium";
   font-size: 16px;
   font-weight: 200;
   line-height: 16px;
@@ -57,22 +63,22 @@ body {
   display: flex;
   align-items: center;
   margin-left: 30px;
-  font-family: "Muller-Medium";
   font-size: 16px;
   font-weight: 200;
   line-height: 16px;
   color: #666666;
 }
-.promo .descr .item .scroll-item {
+.promo .descr .scroll {
   position: absolute;
   display: flex;
-  bottom: 0;
+  bottom: 48px;
+  left: 110px;
 }
-.promo .descr .item .scroll-item .img {
+.promo .descr .scroll .img {
   width: 41px;
   height: 30px;
 }
-.promo .descr .item .scroll-item .text {
+.promo .descr .scroll .text {
   margin-left: 12px;
   font-family: "Muller-Medium";
   font-size: 16px;
@@ -81,6 +87,35 @@ body {
   color: #F9572E;
 }
 .promo .video {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+.promo .video .bg-video {
+  background-image: url(../img/promo/video.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   width: 50vw;
-  background: url(../img/promo/video.png) center no-repeat;
+  height: 100vh;
+}
+.promo .video .play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+}
+.promo .video .play-btn .img {
+  width: 250px;
+  height: 250px;
+}
+.promo .video .play-btn .text {
+  font-size: 21px;
+  font-weight: 200;
+  line-height: 21px;
+  color: #F9572E;
+  text-align: center;
+  margin-top: 10px;
 }/*# sourceMappingURL=style.min.css.map */

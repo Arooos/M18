@@ -10,25 +10,31 @@
 $main-color: #F9572E
 
 body
+	font-family: 'Muller-Medium'
 	background-color: #fff
 	margin: 0
 	height: 100vh
+	text-align: left
 .promo
-	padding: 20px
+	position: relative
+	height: 100vh
+	.logo
+		position: absolute
+		top: 50px
+		left: 110px
 	.descr
 		width: 50vw
-		vertical-align: top
-		padding: 28px 0 0 90px
+		display: flex
+		align-items: center
+		height: 100%
 		.item
-			margin-top: 205px
+			padding: 120px 60px 120px 105px
 			.title
-				font-family: 'Muller-Medium'
 				font-size: 64px
 				font-weight: 400
 				line-height: 64px
 			.subtitle
 				margin-top: 30px
-				font-family: 'Muller-Medium'
 				font-size: 21px
 				font-weight: 200
 				line-height: 30px
@@ -42,7 +48,6 @@ body
 					border-radius: 50px
 					background-color: $main-color
 					color: #fff
-					font-family: 'Muller-Medium'
 					font-size: 16px
 					font-weight: 200
 					line-height: 16px
@@ -50,26 +55,58 @@ body
 					display: flex
 					align-items: center
 					margin-left: 30px
-					font-family: 'Muller-Medium'
 					font-size: 16px
 					font-weight: 200
 					line-height: 16px
 					color: #666666
-			.scroll-item
-				position: absolute
-				display: flex
-				bottom: 0
-				.img
-					width: 41px
-					height: 30px
-				.text
-					margin-left: 12px
-					font-family: 'Muller-Medium'
-					font-size: 16px
-					font-weight: 200
-					line-height: 16px
-					color: $main-color
-
+		.scroll
+			position: absolute
+			display: flex
+			bottom: 48px
+			left: 110px
+			.img
+				width: 41px
+				height: 30px
+			.text
+				margin-left: 12px
+				font-family: 'Muller-Medium'
+				font-size: 16px
+				font-weight: 200
+				line-height: 16px
+				color: $main-color
 	.video
-		width: 50vw
-		background: url(../img/promo/video.png) center no-repeat
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		overflow: hidden
+		.bg-video
+			background-image: url(../img/promo/video.png)
+			background-size: cover
+			background-repeat: no-repeat
+			background-position: center center
+			// position: absolute
+			width: 50vw
+			height: 100vh
+			// top: 0
+			// right: 0
+			// bottom: 0
+			// left: 0
+		.play-btn
+			position: absolute
+			top: 50%  
+			left: 50% 
+			transform: translate(-50%, -60%)
+			.img
+				width: 250px
+				height: 250px
+			.text
+				font-size: 21px
+				font-weight: 200
+				line-height: 21px
+				color: $main-color
+				text-align: center
+				margin-top: 10px
+					
+					
+					
