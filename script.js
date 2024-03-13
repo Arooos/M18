@@ -1,6 +1,5 @@
 const item = document.querySelectorAll('.slider .slider-wrap .slider-line .item');
-const image = document.querySelectorAll('.slider .slider-wrap .slider-line img');
-const sliderLine = document.querySelector('.slider-line');
+const sliderLine = document.querySelector('.slider .slider-wrap .slider-line');
 let count = 0;
 let width;
 
@@ -12,17 +11,27 @@ function init() {
         item.style.width = width + 'px';
         item.style.height = 'auto';
     });
+    rollSlider()
     console.log(width);
 }
 
 window.addEventListener('resize', init);
+init();
 
 document.querySelector('.slider-next').addEventListener('click', function(){
     count++;
-    if (count >= image.length) {
+    if (count >= item.length) {
         count = 0;
     };
     rollSlider()
+});
+
+document.querySelector('.slider-prev').addEventListener('click', function () {
+    count--;
+    if (count < 0) {
+        count = item.length - 1;
+    }
+    rollSlider();
 });
 
 function rollSlider(){

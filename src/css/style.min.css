@@ -194,7 +194,7 @@ h3 {
 }
 
 .advantages {
-  padding-top: 100px;
+  padding-top: 166px;
 }
 .advantages .subtitle {
   font-family: "Muller-Medium";
@@ -207,8 +207,9 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-content: space-between;
   width: 980px;
-  height: 546px;
+  height: 420px;
   margin-top: 60px;
 }
 .advantages-item .flex-basis {
@@ -243,6 +244,9 @@ h3 {
   line-height: 60px;
 }
 
+.slider {
+  padding-top: 184px;
+}
 .slider .container {
   position: relative;
 }
@@ -264,10 +268,12 @@ h3 {
 }
 .slider .container .slider-wrap .slider-line .item {
   display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 .slider .container .slider-wrap .slider-line .item .slider-descr {
-  margin: 0 auto;
   width: 144px;
+  margin: 0 auto;
   font-family: "Muller-Regular";
   font-size: 13px;
   font-weight: 200;
@@ -285,4 +291,40 @@ h3 {
 }
 .slider .container .slider-button button {
   padding: 0;
+}
+
+.subscribe {
+  padding-top: 137px;
+}
+.subscribe h2 {
+  display: inline-block;
+  background: #fff;
+  text-align: center;
+  width: 680px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+.subscribe .wrap {
+  height: 639px;
+  border: 4px solid #63D2C1;
+  margin-top: -23px;
+  display: flex;
+  flex-direction: column;
+}
+.subscribe .wrap .title {
+  width: 361px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 41px;
+  height: 69px;
+}
+.subscribe .wrap .title .text {
+  font-family: "Muller-Regular";
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 24px;
+  color: #000;
+  margin-left: 17px;
 }/*# sourceMappingURL=style.min.css.map */
