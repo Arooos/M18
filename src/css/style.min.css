@@ -1,23 +1,73 @@
 @font-face {
   font-family: "Muller-Medium";
-  src: url("../fonts/muller-medium.eot");
-  src: url("../fonts/muller-medium.eot?#iefix") format("embedded-opentype");
-  src: url("../fonts/muller-medium.woff2") format("woff2");
-  src: url("../fonts/muller-medium.woff") format("woff");
-  src: url("../fonts/muller-medium.ttf") format("truetype");
-  src: url("../fonts/muller-medium.svg#muller-medium") format("svg");
+  src: url("../fonts/muller-medium/muller-medium.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/muller-medium/muller-medium.eot");
+  src: url("../fonts/muller-medium/muller-medium.woff2") format("woff2");
+  src: url("../fonts/muller-medium/muller-medium.woff") format("woff");
+  src: url("../fonts/muller-medium/muller-medium.ttf") format("truetype");
+  src: url("../fonts/muller-medium/muller-medium.svg#muller-medium") format("svg");
 }
-body {
-  font-family: "Muller-Medium";
+@font-face {
+  font-family: "Muller-Regular";
+  src: url("../fonts/muller-regular/muller-regular.eot");
+  src: url("../fonts/muller-regular/muller-regular.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/muller-regular/muller-regular.woff2") format("woff2");
+  src: url("../fonts/muller-regular/muller-regular.woff") format("woff");
+  src: url("../fonts/muller-regular/muller-regular.ttf") format("truetype");
+  src: url("../fonts/muller-regular/muller-regular.svg#muller-regular") format("svg");
+}
+html {
+  scroll-behavior: smooth;
   background-color: #fff;
   margin: 0;
   height: 100vh;
   text-align: left;
 }
 
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+button {
+  background: none;
+  cursor: pointer;
+  border: 0;
+}
+
+h1 {
+  font-family: "Muller-Medium";
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 64px;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Muller-Medium";
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 50px;
+  margin: 0;
+}
+
+h3 {
+  font-family: "Muller-Medium";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  margin: 0;
+  margin-top: 33px;
+}
+
 .promo {
   position: relative;
   height: 100vh;
+  min-height: 540px;
 }
 .promo .logo {
   position: absolute;
@@ -33,33 +83,33 @@ body {
 .promo .descr .item {
   padding: 120px 60px 120px 105px;
 }
-.promo .descr .item .title {
-  font-size: 64px;
-  font-weight: 400;
-  line-height: 64px;
-}
 .promo .descr .item .subtitle {
+  font-family: "Muller-Regular";
   margin-top: 30px;
   font-size: 21px;
   font-weight: 200;
   line-height: 30px;
+  color: #000;
 }
 .promo .descr .item .btn-item {
   margin-top: 45px;
   display: flex;
 }
-.promo .descr .item .btn-item .btn {
+.promo .descr .item .btn-item button {
   border: 0;
   width: 260px;
   height: 51px;
   border-radius: 50px;
   background-color: #F9572E;
+  box-shadow: 0 7px 30px rgba(249, 87, 46, 0.6);
   color: #fff;
+  font-family: "Muller-Medium";
   font-size: 16px;
   font-weight: 200;
   line-height: 16px;
 }
 .promo .descr .item .btn-item .text {
+  font-family: "Muller-Regular";
   display: flex;
   align-items: center;
   margin-left: 30px;
@@ -73,12 +123,14 @@ body {
   display: flex;
   bottom: 48px;
   left: 110px;
+  text-decoration: none;
 }
-.promo .descr .scroll .img {
+.promo .descr .scroll img {
   width: 41px;
   height: 30px;
 }
 .promo .descr .scroll .text {
+  text-align: left;
   margin-left: 12px;
   font-family: "Muller-Medium";
   font-size: 16px;
@@ -92,6 +144,7 @@ body {
   right: 0;
   bottom: 0;
   overflow: hidden;
+  padding: 20px 20px 20px 0;
 }
 .promo .video .bg-video {
   background-image: url(../img/promo/video.png);
@@ -99,7 +152,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   width: 50vw;
-  height: 100vh;
+  height: 100%;
 }
 .promo .video .play-btn {
   position: absolute;
@@ -112,10 +165,124 @@ body {
   height: 250px;
 }
 .promo .video .play-btn .text {
+  font-family: "Muller-Medium";
   font-size: 21px;
   font-weight: 200;
   line-height: 21px;
   color: #F9572E;
   text-align: center;
   margin-top: 10px;
+}
+.promo .video .call {
+  position: absolute;
+  top: 50px;
+  right: 89px;
+  display: flex;
+  align-items: center;
+}
+.promo .video .call .img {
+  width: 24px;
+  height: 24px;
+  margin-right: 7px;
+}
+.promo .video .call .text {
+  font-family: "Muller-Medium";
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 16px;
+  color: #000;
+}
+
+.advantages {
+  padding-top: 100px;
+}
+.advantages .subtitle {
+  font-family: "Muller-Medium";
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 24px;
+  color: #63D2C1;
+}
+.advantages-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 980px;
+  height: 546px;
+  margin-top: 60px;
+}
+.advantages-item .flex-basis {
+  border-top: 4px solid #63D2C1;
+  flex-basis: 450px;
+  height: 180px;
+}
+.advantages-item .flex-basis .line {
+  width: 100%;
+  height: 4px;
+  background: #63D2C1;
+}
+.advantages-item .flex-basis p {
+  font-family: "Muller-Regular";
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 24px;
+  color: #666666;
+}
+.advantages-item .square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 4px solid #63D2C1;
+  flex-basis: 442px;
+}
+.advantages-item .square .text {
+  font-family: "Muller-Medium";
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 60px;
+}
+
+.slider .container {
+  position: relative;
+}
+.slider .container .subtitle {
+  font-family: "Muller-Medium";
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 24px;
+  color: #63D2C1;
+}
+.slider .container .slider-wrap {
+  margin-top: 50px;
+  width: 100%;
+  overflow: hidden;
+}
+.slider .container .slider-wrap .slider-line {
+  display: flex;
+  transition: all ease 1s;
+}
+.slider .container .slider-wrap .slider-line .item {
+  display: flex;
+}
+.slider .container .slider-wrap .slider-line .item .slider-descr {
+  margin: 0 auto;
+  width: 144px;
+  font-family: "Muller-Regular";
+  font-size: 13px;
+  font-weight: 200;
+  line-height: 20px;
+  color: #666666;
+}
+.slider .container .slider-button {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  right: 78px;
+  bottom: 0;
+  width: 73px;
+  height: 44px;
+}
+.slider .container .slider-button button {
+  padding: 0;
 }/*# sourceMappingURL=style.min.css.map */

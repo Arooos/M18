@@ -1,112 +1,60 @@
+@import 'base/varibles'
+	
 @font-face
 	font-family: 'Muller-Medium'
-	src: url('../fonts/muller-medium.eot')
-	src: url('../fonts/muller-medium.eot?#iefix') format('embedded-opentype') 
-	src: url('../fonts/muller-medium.woff2') format('woff2')
-	src: url('../fonts/muller-medium.woff') format('woff')
-	src: url('../fonts/muller-medium.ttf') format('truetype')
-	src: url('../fonts/muller-medium.svg#muller-medium') format('svg')
+	src: url('../fonts/muller-medium/muller-medium.eot?#iefix') format('embedded-opentype') 
+	src: url('../fonts/muller-medium/muller-medium.eot')
+	src: url('../fonts/muller-medium/muller-medium.woff2') format('woff2')
+	src: url('../fonts/muller-medium/muller-medium.woff') format('woff')
+	src: url('../fonts/muller-medium/muller-medium.ttf') format('truetype')
+	src: url('../fonts/muller-medium/muller-medium.svg#muller-medium') format('svg')
+@font-face
+	font-family: 'Muller-Regular'
+	src: url('../fonts/muller-regular/muller-regular.eot')
+	src: url('../fonts/muller-regular/muller-regular.eot?#iefix') format('embedded-opentype')
+	src: url('../fonts/muller-regular/muller-regular.woff2') format('woff2')
+	src: url('../fonts/muller-regular/muller-regular.woff') format('woff')
+	src: url('../fonts/muller-regular/muller-regular.ttf') format('truetype')
+	src: url('../fonts/muller-regular/muller-regular.svg#muller-regular') format('svg')
 
-$main-color: #F9572E
 
-body
-	font-family: 'Muller-Medium'
+html
+	scroll-behavior: smooth
 	background-color: #fff
 	margin: 0
 	height: 100vh
 	text-align: left
-.promo
-	position: relative
-	height: 100vh
-	.logo
-		position: absolute
-		top: 50px
-		left: 110px
-	.descr
-		width: 50vw
-		display: flex
-		align-items: center
-		height: 100%
-		.item
-			padding: 120px 60px 120px 105px
-			.title
-				font-size: 64px
-				font-weight: 400
-				line-height: 64px
-			.subtitle
-				margin-top: 30px
-				font-size: 21px
-				font-weight: 200
-				line-height: 30px
-			.btn-item
-				margin-top: 45px
-				display: flex
-				.btn
-					border: 0
-					width: 260px
-					height: 51px
-					border-radius: 50px
-					background-color: $main-color
-					color: #fff
-					font-size: 16px
-					font-weight: 200
-					line-height: 16px
-				.text
-					display: flex
-					align-items: center
-					margin-left: 30px
-					font-size: 16px
-					font-weight: 200
-					line-height: 16px
-					color: #666666
-		.scroll
-			position: absolute
-			display: flex
-			bottom: 48px
-			left: 110px
-			.img
-				width: 41px
-				height: 30px
-			.text
-				margin-left: 12px
-				font-family: 'Muller-Medium'
-				font-size: 16px
-				font-weight: 200
-				line-height: 16px
-				color: $main-color
-	.video
-		position: absolute
-		top: 0
-		right: 0
-		bottom: 0
-		overflow: hidden
-		.bg-video
-			background-image: url(../img/promo/video.png)
-			background-size: cover
-			background-repeat: no-repeat
-			background-position: center center
-			// position: absolute
-			width: 50vw
-			height: 100vh
-			// top: 0
-			// right: 0
-			// bottom: 0
-			// left: 0
-		.play-btn
-			position: absolute
-			top: 50%  
-			left: 50% 
-			transform: translate(-50%, -60%)
-			.img
-				width: 250px
-				height: 250px
-			.text
-				font-size: 21px
-				font-weight: 200
-				line-height: 21px
-				color: $main-color
-				text-align: center
-				margin-top: 10px
-					
-					
-					
+body
+	margin: 0
+.container
+	max-width: 980px
+	margin: 0 auto
+
+button
+	background: none
+	cursor: pointer
+	border: 0
+
+h1
+	font-family: "Muller-Medium"
+	font-size: 64px
+	font-weight: 400
+	line-height: 64px
+	margin: 0
+h2
+	font-family: "Muller-Medium"
+	font-size: 40px
+	font-weight: 400
+	line-height: 50px
+	margin: 0
+h3
+	font-family: "Muller-Medium"
+	font-size: 24px
+	font-weight: 400
+	line-height: 32px
+	margin: 0
+	margin-top: 33px 
+
+@import 'blocks/promo'				
+@import 'blocks/advantages'					
+@import 'blocks/_slider-style'
