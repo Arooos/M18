@@ -29,7 +29,7 @@ body {
 }
 
 .container {
-  max-width: 980px;
+  width: 980px;
   margin: 0 auto;
 }
 
@@ -64,26 +64,26 @@ h3 {
   margin-top: 33px;
 }
 
-.promo {
+html body .promo {
   position: relative;
   height: 100vh;
   min-height: 540px;
 }
-.promo .logo {
+html body .promo .logo {
   position: absolute;
   top: 50px;
   left: 110px;
 }
-.promo .descr {
+html body .promo .descr {
   width: 50vw;
   display: flex;
   align-items: center;
   height: 100%;
 }
-.promo .descr .item {
+html body .promo .descr .item {
   padding: 120px 60px 120px 105px;
 }
-.promo .descr .item .subtitle {
+html body .promo .descr .item .subtitle {
   font-family: "Muller-Regular";
   margin-top: 30px;
   font-size: 21px;
@@ -91,14 +91,12 @@ h3 {
   line-height: 30px;
   color: #000;
 }
-.promo .descr .item .btn-item {
+html body .promo .descr .item .btn-item {
   margin-top: 45px;
   display: flex;
 }
-.promo .descr .item .btn-item button {
+html body .promo .descr .item .btn-item button {
   border: 0;
-  width: 260px;
-  height: 51px;
   border-radius: 50px;
   background-color: #F9572E;
   box-shadow: 0 7px 30px rgba(249, 87, 46, 0.6);
@@ -106,9 +104,11 @@ h3 {
   font-family: "Muller-Medium";
   font-size: 16px;
   font-weight: 200;
-  line-height: 16px;
+  line-height: 18px;
+  width: 260px;
+  height: 51px;
 }
-.promo .descr .item .btn-item .text {
+html body .promo .descr .item .btn-item .text {
   font-family: "Muller-Regular";
   display: flex;
   align-items: center;
@@ -118,18 +118,18 @@ h3 {
   line-height: 16px;
   color: #666666;
 }
-.promo .descr .scroll {
+html body .promo .descr .scroll {
   position: absolute;
   display: flex;
   bottom: 48px;
   left: 110px;
   text-decoration: none;
 }
-.promo .descr .scroll img {
+html body .promo .descr .scroll img {
   width: 41px;
   height: 30px;
 }
-.promo .descr .scroll .text {
+html body .promo .descr .scroll .text {
   text-align: left;
   margin-left: 12px;
   font-family: "Muller-Medium";
@@ -138,7 +138,7 @@ h3 {
   line-height: 16px;
   color: #F9572E;
 }
-.promo .video {
+html body .promo .video {
   position: absolute;
   top: 0;
   right: 0;
@@ -146,7 +146,7 @@ h3 {
   overflow: hidden;
   padding: 20px 20px 20px 0;
 }
-.promo .video .bg-video {
+html body .promo .video .bg-video {
   background-image: url(../img/promo/video.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -154,17 +154,17 @@ h3 {
   width: 50vw;
   height: 100%;
 }
-.promo .video .play-btn {
+html body .promo .video .play-btn {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -60%);
 }
-.promo .video .play-btn .img {
+html body .promo .video .play-btn .img {
   width: 250px;
   height: 250px;
 }
-.promo .video .play-btn .text {
+html body .promo .video .play-btn .text {
   font-family: "Muller-Medium";
   font-size: 21px;
   font-weight: 200;
@@ -173,19 +173,19 @@ h3 {
   text-align: center;
   margin-top: 10px;
 }
-.promo .video .call {
+html body .promo .video .call {
   position: absolute;
   top: 50px;
   right: 89px;
   display: flex;
   align-items: center;
 }
-.promo .video .call .img {
+html body .promo .video .call .img {
   width: 24px;
   height: 24px;
   margin-right: 7px;
 }
-.promo .video .call .text {
+html body .promo .video .call .text {
   font-family: "Muller-Medium";
   font-size: 16px;
   font-weight: 100;
@@ -193,17 +193,17 @@ h3 {
   color: #000;
 }
 
-.advantages {
+html body .advantages {
   padding-top: 166px;
 }
-.advantages .subtitle {
+html body .advantages .subtitle {
   font-family: "Muller-Medium";
   font-size: 16px;
   font-weight: 200;
   line-height: 24px;
   color: #63D2C1;
 }
-.advantages-item {
+html body .advantages-item {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -212,24 +212,24 @@ h3 {
   height: 420px;
   margin-top: 60px;
 }
-.advantages-item .flex-basis {
+html body .advantages-item .flex-basis {
   border-top: 4px solid #63D2C1;
   flex-basis: 450px;
   height: 180px;
 }
-.advantages-item .flex-basis .line {
+html body .advantages-item .flex-basis .line {
   width: 100%;
   height: 4px;
   background: #63D2C1;
 }
-.advantages-item .flex-basis p {
+html body .advantages-item .flex-basis p {
   font-family: "Muller-Regular";
   font-size: 16px;
   font-weight: 100;
   line-height: 24px;
   color: #666666;
 }
-.advantages-item .square {
+html body .advantages-item .square {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -237,41 +237,41 @@ h3 {
   border: 4px solid #63D2C1;
   flex-basis: 442px;
 }
-.advantages-item .square .text {
+html body .advantages-item .square .text {
   font-family: "Muller-Medium";
   font-size: 64px;
   font-weight: 400;
   line-height: 60px;
 }
 
-.slider {
+html body .slider {
   padding-top: 184px;
 }
-.slider .container {
+html body .slider .container {
   position: relative;
 }
-.slider .container .subtitle {
+html body .slider .container .subtitle {
   font-family: "Muller-Medium";
   font-size: 16px;
   font-weight: 200;
   line-height: 24px;
   color: #63D2C1;
 }
-.slider .container .slider-wrap {
+html body .slider .container .slider-wrap {
   margin-top: 50px;
   width: 100%;
   overflow: hidden;
 }
-.slider .container .slider-wrap .slider-line {
+html body .slider .container .slider-wrap .slider-line {
   display: flex;
   transition: all ease 1s;
 }
-.slider .container .slider-wrap .slider-line .item {
+html body .slider .container .slider-wrap .slider-line .item {
   display: flex;
   width: 100%;
   justify-content: space-between;
 }
-.slider .container .slider-wrap .slider-line .item .slider-descr {
+html body .slider .container .slider-wrap .slider-line .item .slider-descr {
   width: 144px;
   margin: 0 auto;
   font-family: "Muller-Regular";
@@ -280,7 +280,7 @@ h3 {
   line-height: 20px;
   color: #666666;
 }
-.slider .container .slider-button {
+html body .slider .container .slider-button {
   position: absolute;
   display: flex;
   justify-content: space-between;
@@ -289,14 +289,14 @@ h3 {
   width: 73px;
   height: 44px;
 }
-.slider .container .slider-button button {
+html body .slider .container .slider-button button {
   padding: 0;
 }
 
-.subscribe {
-  padding-top: 137px;
+html body .subscribe {
+  padding: 137px 0 134px 0;
 }
-.subscribe h2 {
+html body .subscribe h2 {
   display: inline-block;
   background: #fff;
   text-align: center;
@@ -304,27 +304,183 @@ h3 {
   margin-left: 50%;
   transform: translateX(-50%);
 }
-.subscribe .wrap {
+html body .subscribe .wrap {
   height: 639px;
   border: 4px solid #63D2C1;
   margin-top: -23px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
-.subscribe .wrap .title {
+html body .subscribe .wrap .title {
   width: 361px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 41px;
+  margin-top: 60px;
   height: 69px;
 }
-.subscribe .wrap .title .text {
+html body .subscribe .wrap .title .text {
   font-family: "Muller-Regular";
   font-size: 20px;
   font-weight: 200;
   line-height: 24px;
   color: #000;
   margin-left: 17px;
+}
+html body .subscribe .wrap .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 240px;
+  margin-top: 50px;
+}
+html body .subscribe .wrap .form .input {
+  height: 60px;
+  width: 500px;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+  padding-left: 24px;
+}
+html body .subscribe .wrap .form .input::-webkit-input-placeholder {
+  color: #666666;
+  font-family: "Muller-Regular";
+  font-size: 18px;
+  line-height: 24px;
+}
+html body .subscribe .wrap .form .input:-moz-placeholder {
+  color: #666666;
+}
+html body .subscribe .wrap .form .input::-moz-placeholder {
+  color: #666666;
+}
+html body .subscribe .wrap .form .input:-ms-input-placeholder {
+  color: #666666;
+}
+html body .subscribe .wrap button {
+  border: 0;
+  border-radius: 50px;
+  background-color: #F9572E;
+  box-shadow: 0 7px 30px rgba(249, 87, 46, 0.6);
+  color: #fff;
+  font-family: "Muller-Medium";
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 18px;
+  margin-top: 48px;
+  width: 250px;
+  height: 51px;
+}
+html body .subscribe .wrap .policy {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Muller-Regular";
+  font-size: 13px;
+  font-weight: 200;
+  line-height: 20px;
+}
+html body .subscribe .wrap .policy span {
+  color: #F9572E;
+}
+
+html body .footer {
+  background-color: #F2F2F2;
+  max-height: 520px;
+  padding: 72px 0 28px 0;
+}
+html body .footer .wrap {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+html body .footer .wrap .icon {
+  display: flex;
+  justify-content: space-between;
+  width: 213px;
+}
+html body .footer .wrap .icon img {
+  background: #F9572E;
+  background-size: 50px 50px;
+}
+html body .footer .wrap .follow {
+  margin-top: 32px;
+  font-family: "Muller-Regular";
+  font-size: 21px;
+  line-height: 26px;
+}
+html body .footer .wrap .social-text {
+  color: #666666;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+html body .footer .wrap .data {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 76px;
+  width: 875px;
+}
+html body .footer .wrap .data .number {
+  display: flex;
+  align-items: center;
+  width: 250px;
+}
+html body .footer .wrap .data .number img {
+  height: 24px;
+  width: 24px;
+}
+html body .footer .wrap .data .number .text {
+  margin-left: 9px;
+  font-family: "Muller-Regular";
+  font-size: 21px;
+  line-height: 30px;
+}
+html body .footer .wrap .data .address {
+  width: 250px;
+  text-align: center;
+  margin-left: 9px;
+  font-family: "Muller-Regular";
+  font-size: 21px;
+  line-height: 30px;
+}
+html body .footer .wrap .data .address span {
+  font-size: 16px;
+  line-height: 24px;
+  color: #666666;
+}
+html body .footer .wrap .data .email {
+  display: flex;
+  align-items: center;
+  width: 250px;
+}
+html body .footer .wrap .data .email img {
+  height: 20px;
+  width: 30px;
+}
+html body .footer .wrap .data .email .text {
+  margin-left: 9px;
+  font-family: "Muller-Regular";
+  font-size: 21px;
+  line-height: 30px;
+}
+html body .footer .wrap .data .email .text::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  background: #F9572E;
+}
+html body .footer .line {
+  margin-top: 78px;
+  height: 1px;
+  width: 90%;
+  background: #cccccc;
+}
+html body .footer .corp {
+  margin-top: 32px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #666666;
 }/*# sourceMappingURL=style.min.css.map */

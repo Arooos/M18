@@ -1,4 +1,4 @@
-.promo
+html body .promo
 	position: relative
 	height: 100vh
 	min-height: 540px
@@ -24,17 +24,9 @@
 				margin-top: 45px
 				display: flex
 				button
-					border: 0
+					@include button
 					width: 260px
 					height: 51px
-					border-radius: 50px
-					background-color: $main-color
-					box-shadow: 0 7px 30px rgba(249,87,46,.6)
-					color: #fff
-					font-family: "Muller-Medium"
-					font-size: 16px
-					font-weight: 200
-					line-height: 16px
 				.text
 					font-family: "Muller-Regular"
 					display: flex
