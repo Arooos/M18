@@ -22,6 +22,7 @@ html {
   margin: 0;
   height: 100vh;
   text-align: left;
+  font-size: 62.5%;
 }
 
 body {
@@ -49,7 +50,7 @@ h1 {
 
 h2 {
   font-family: "Muller-Medium";
-  font-size: 40px;
+  font-size: 4rem;
   font-weight: 400;
   line-height: 50px;
   margin: 0;
@@ -107,6 +108,9 @@ html body .promo .descr .item .btn-item button {
   line-height: 18px;
   width: 260px;
   height: 51px;
+}
+html body .promo .descr .item .btn-item button:hover {
+  background-color: #FF7B59;
 }
 html body .promo .descr .item .btn-item button:hover {
   background-color: #FF7B59;
@@ -190,6 +194,7 @@ html body .promo .video .call {
   right: 89px;
   display: flex;
   align-items: center;
+  text-decoration: none;
 }
 html body .promo .video .call:hover {
   cursor: pointer;
@@ -208,7 +213,6 @@ html body .promo .video .call .text {
   font-weight: 100;
   line-height: 16px;
   color: #000;
-  text-decoration: none;
 }
 
 html body .advantages {
@@ -318,12 +322,12 @@ html body .subscribe h2 {
   display: inline-block;
   background: #fff;
   text-align: center;
-  width: 680px;
+  width: 700px;
   margin-left: 50%;
   transform: translateX(-50%);
 }
 html body .subscribe .wrap {
-  height: 639px;
+  height: 640px;
   border: 4px solid #63D2C1;
   margin-top: -23px;
   display: flex;
@@ -331,7 +335,7 @@ html body .subscribe .wrap {
   align-items: center;
 }
 html body .subscribe .wrap .title {
-  width: 361px;
+  width: 360px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -388,6 +392,9 @@ html body .subscribe .wrap button {
   margin-top: 48px;
   width: 250px;
   height: 51px;
+}
+html body .subscribe .wrap button:hover {
+  background-color: #FF7B59;
 }
 html body .subscribe .wrap .policy {
   margin-top: 25px;
@@ -515,4 +522,72 @@ html body .footer .corp {
   font-size: 16px;
   line-height: 24px;
   color: #666666;
+}
+
+.active {
+  overflow: hidden;
+  padding-right: 24px;
+}
+
+html body .overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: rgba(0, 0, 0, 0.48);
+  backdrop-filter: blur(10px);
+  display: none;
+  overflow-y: auto;
+  z-index: 100;
+}
+html body .modal {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  padding: 0 0.4rem;
+  background: #fff;
+  width: 98.4rem;
+  height: 68.1rem;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 101;
+}
+html body .modal_close {
+  position: absolute;
+  top: 0px;
+  right: -60px;
+  font-size: 70px;
+  line-height: 40px;
+  color: #ffffff;
+  cursor: pointer;
+}
+html body .modal h2 {
+  position: relative;
+  margin: 0 auto;
+  background: #fff;
+  text-align: center;
+  width: 72%;
+}
+html body .modal .wrap {
+  width: 100%;
+  height: 100%;
+  border: 0.4rem solid #63D2C1;
+  margin-top: -23px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+html body .modal .wrap .text {
+  margin-top: 4.1rem;
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 200;
+  font-family: "Muller-Regular";
 }/*# sourceMappingURL=style.min.css.map */

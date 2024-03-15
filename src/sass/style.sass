@@ -17,17 +17,18 @@
 	src: url('../fonts/muller-regular/muller-regular.woff') format('woff')
 	src: url('../fonts/muller-regular/muller-regular.ttf') format('truetype')
 	src: url('../fonts/muller-regular/muller-regular.svg#muller-regular') format('svg')
-
-
+	
+// .promo, .advantages, .slider, .subscribe, .footer
+// 	display: none
 html
 	scroll-behavior: smooth
 	background-color: #fff
 	margin: 0
 	height: 100vh
 	text-align: left
+	font-size: 62.5%
 body
 	margin: 0
-	
 .container
 	width: 980px
 	margin: 0 auto
@@ -45,7 +46,7 @@ h1
 	margin: 0
 h2
 	font-family: "Muller-Medium"
-	font-size: 40px
+	font-size: 4rem
 	font-weight: 400
 	line-height: 50px
 	margin: 0
@@ -62,3 +63,4 @@ h3
 @import 'blocks/_slider-style'
 @import 'blocks/_subscribe'
 @import 'blocks/_footer'
+@import 'blocks/_modal'

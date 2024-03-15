@@ -1,23 +1,25 @@
 @mixin button
-    border: 0
-    border-radius: 50px
-    background-color: $main-color
-    box-shadow: 0 7px 30px rgba(249,87,46,.6)
-    color: #fff
-    font-family: "Muller-Medium"
-    font-size: 16px
-    font-weight: 200
-    line-height: 18px
-    
-@mixin placeholder 
-  &::-webkit-input-placeholder 
-    color: #666666
-    font-family: "Muller-Regular"
-    font-size: 18px
-    line-height: 24px
-  &:-moz-placeholder           
-    color: #666666
-  &::-moz-placeholder          
-    color: #666666
-  &:-ms-input-placeholder     
-    color: #666666
+		border: 0
+		border-radius: 50px
+		background-color: $main-color
+		box-shadow: 0 7px 30px rgba(249,87,46,.6)
+		color: #fff
+		font-family: "Muller-Medium"
+		font-size: 16px
+		font-weight: 200
+		line-height: 18px
+		&:hover
+			background-color: #FF7B59
+
+@mixin placeholder
+	&::-webkit-input-placeholder
+		color: #666666
+		font-family: "Muller-Regular"
+		font-size: 18px
+		line-height: 24px
+	&:-moz-placeholder
+		color: #666666
+	&::-moz-placeholder
+		color: #666666
+	&:-ms-input-placeholder
+		color: #666666

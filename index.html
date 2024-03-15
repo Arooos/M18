@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="./src/css/style.min.css">
 	<title>Document</title>
 </head>
-<body>
+<body id="body">
 	<section class="promo">
 		<div class="descr">
 			<img src="./src/img/promo/logotype.png" alt="Fix ремонт" class="logo">
@@ -29,10 +29,10 @@
 		</div> 
 		<div class="video">
 			<div class="bg-video">
-				<button type="button" class="play-btn">
+				<a type="button" class="play-btn">
 					<img src="./src/img/promo/play.png" alt="" class="img">
 					<div class="text">Смотреть видео</div>
-				</button>
+				</a>
 				<a href="#footer" class="call">
 					<img src="./src/img/promo/phone.png" alt="" class="img">
 					<div class="text">Контакты</div>
@@ -40,6 +40,8 @@
 			</div>
 		</div>   
 	</section>
+
+
 	<section class="advantages" id="advantages">
 		<div class="container">
 			<h2>FIX Ремонт — это легко</h2>
@@ -64,6 +66,8 @@
 			</div>
 		</div>
 	</section>
+
+
 	<section class="slider">
 		<div class="container">
 			<h2>3 стиля интерьера</h2>
@@ -90,6 +94,8 @@
 			</div>
 		</div>
 	</section>
+
+
 	<section class="subscribe">
 		<div class="container">
 			<h2>Узнайте о запуске сервиса первым</h2>
@@ -105,15 +111,16 @@
 					<input type="email" placeholder="Е-mail адрес*" class="input">
 					<input type="tel" placeholder="Телефон" class="input">
 				</form>
-				<button type="submit">Подписаться</button>
+				<button id="sent_btn" class="bg_block">Подписаться</button>
 				<div class="policy">
 					* Обязательные для заполнения поля
 					<span>Политика конфиденциальности</span>
 				</div>
 			</div>
-			
 		</div>
 	</section>
+
+
 	<section class="footer" id="footer">
 			<div class="wrap">
 				<div class="icon">
@@ -142,16 +149,19 @@
 				<div class="corp">© FIX Ремонт, 2016</div>
 			</div>
 	</section>
-	<section class="modal">
-		<div class="done">
+
+
+	<section class="overlay" id="overlay">
+		<div class="modal" id="sent">
+			<div class="modal_close">&times;</div>
 			<h2>Узнайте о запуске сервиса первым</h2>
 			<div class="wrap">
-				<img src="" alt="">
+				<img src="./src/img/modal/Done.png" alt="">
 				<div class="text">Спасибо! Мы будем держать <br/>вас в курсе обновлений</div>
 			</div>
 		</div>
 	</section>
-
+	
 	<script src="./script.js"></script>
 </body>
 </html>

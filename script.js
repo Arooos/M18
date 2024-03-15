@@ -1,3 +1,4 @@
+//слайдер
 const item = document.querySelectorAll('.slider .slider-wrap .slider-line .item');
 const sliderLine = document.querySelector('.slider .slider-wrap .slider-line');
 let count = 0;
@@ -37,3 +38,37 @@ document.querySelector('.slider-prev').addEventListener('click', function () {
 function rollSlider(){
     sliderLine.style.transform = 'translate(-' + count * width + 'px)';
 };
+
+
+var modal = document.getElementById('sent');
+var overlay = document.getElementById('overlay');
+var btn = document.getElementById('sent_btn');
+var modal_close = document.getElementsByClassName("modal_close")[0];
+var body = document.getElementById('body');
+
+btn.onclick = function () {
+    modal.style.display = "flex"
+    overlay.style.display = "block"
+    document.body.classList.add(active);
+}
+
+modal_close.onclick = function () {
+    overlay.style.display = "none"
+    modal.style.display = "none"
+    document.body.classList.remove(active);
+}
+
+window.onclick = function (event) {
+    if (event.target == overlay) {
+        overlay.style.display = "none"
+        modal.style.display = "none"
+        document.body.classList.remove(active);
+    }
+}
+
+
+
+
+
+
+
