@@ -27,6 +27,8 @@ html body .promo
 					@include button
 					width: 260px
 					height: 51px
+					&:hover
+						background-color: #FF7B59
 				.text
 					font-family: "Muller-Regular"
 					display: flex
@@ -39,15 +41,21 @@ html body .promo
 		.scroll
 			position: absolute
 			display: flex
+			justify-content: space-between
+			width: 250px
 			bottom: 48px
 			left: 110px
 			text-decoration: none
+			&:hover
+				left: 115px
+				width: 245px
+				img
+					width: 32px
 			img
 				width: 41px
 				height: 30px
 			.text
 				text-align: left
-				margin-left: 12px
 				font-family: 'Muller-Medium'
 				font-size: 16px
 				font-weight: 200
@@ -89,6 +97,10 @@ html body .promo
 			right: 89px
 			display: flex
 			align-items: center
+			&:hover
+				cursor: pointer
+				.text
+					color: $main-color
 			.img
 				width: 24px
 				height: 24px
@@ -99,3 +111,4 @@ html body .promo
 				font-weight: 100
 				line-height: 16px
 				color: #000
+				text-decoration: none

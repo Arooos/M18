@@ -108,6 +108,9 @@ html body .promo .descr .item .btn-item button {
   width: 260px;
   height: 51px;
 }
+html body .promo .descr .item .btn-item button:hover {
+  background-color: #FF7B59;
+}
 html body .promo .descr .item .btn-item .text {
   font-family: "Muller-Regular";
   display: flex;
@@ -121,9 +124,18 @@ html body .promo .descr .item .btn-item .text {
 html body .promo .descr .scroll {
   position: absolute;
   display: flex;
+  justify-content: space-between;
+  width: 250px;
   bottom: 48px;
   left: 110px;
   text-decoration: none;
+}
+html body .promo .descr .scroll:hover {
+  left: 115px;
+  width: 245px;
+}
+html body .promo .descr .scroll:hover img {
+  width: 32px;
 }
 html body .promo .descr .scroll img {
   width: 41px;
@@ -131,7 +143,6 @@ html body .promo .descr .scroll img {
 }
 html body .promo .descr .scroll .text {
   text-align: left;
-  margin-left: 12px;
   font-family: "Muller-Medium";
   font-size: 16px;
   font-weight: 200;
@@ -180,6 +191,12 @@ html body .promo .video .call {
   display: flex;
   align-items: center;
 }
+html body .promo .video .call:hover {
+  cursor: pointer;
+}
+html body .promo .video .call:hover .text {
+  color: #F9572E;
+}
 html body .promo .video .call .img {
   width: 24px;
   height: 24px;
@@ -191,6 +208,7 @@ html body .promo .video .call .text {
   font-weight: 100;
   line-height: 16px;
   color: #000;
+  text-decoration: none;
 }
 
 html body .advantages {
@@ -400,9 +418,17 @@ html body .footer .wrap .icon {
   justify-content: space-between;
   width: 213px;
 }
-html body .footer .wrap .icon img {
+html body .footer .wrap .icon .img-bg {
+  width: 50px;
+  height: 50px;
   background: #F9572E;
-  background-size: 50px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html body .footer .wrap .icon .img-bg:hover {
+  background-color: #FF7B59;
+  cursor: pointer;
 }
 html body .footer .wrap .follow {
   margin-top: 32px;
@@ -454,6 +480,12 @@ html body .footer .wrap .data .email {
   display: flex;
   align-items: center;
   width: 250px;
+}
+html body .footer .wrap .data .email:hover {
+  cursor: pointer;
+}
+html body .footer .wrap .data .email:hover .text {
+  color: #F9572E;
 }
 html body .footer .wrap .data .email img {
   height: 20px;
