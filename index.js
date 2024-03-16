@@ -40,35 +40,40 @@ function rollSlider(){
 };
 
 
-var modal = document.getElementById('sent');
-var overlay = document.getElementById('overlay');
+var modal = document.getElementById('modal');
+var modal_sent = document.getElementById('sent')
 var btn = document.getElementById('sent_btn');
-var modal_close = document.getElementsByClassName("modal_close")[0];
+var modal_close = document.getElementsByClassName("modal-close")[0];
 var body = document.getElementById('body');
+var modal_bg = document.getElementById('modal-bg');
+
 
 btn.onclick = function () {
-    modal.style.display = "flex"
-    overlay.style.display = "block"
-    document.body.classList.add(active);
+    document.body.classList.add('bg-block');
+    modal.classList.add('active');
+    modal_sent.classList.add('active');
 }
 
 modal_close.onclick = function () {
-    overlay.style.display = "none"
-    modal.style.display = "none"
-    document.body.classList.remove(active);
+    document.body.classList.remove('bg-block');
+    modal.classList.remove('active');
+    modal_sent.classList.remove('active');
 }
 
 window.onclick = function (event) {
-    if (event.target == overlay) {
-        overlay.style.display = "none"
-        modal.style.display = "none"
-        document.body.classList.remove(active);
+    if (event.target == modal_bg) {
+        document.body.classList.remove('bg-block');
+        modal.classList.remove('active');
+        modal_sent.classList.remove('active');
     }
 }
 
 
 
 
+const modalBtns = document.querySelectorAll('.modal-open');
+const modals = document.querySelectorAll('.modal');
 
-
-
+function openModal(elem) {
+    elem.classList.add('active')
+}
