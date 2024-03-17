@@ -34,13 +34,49 @@ html body .subscribe
 			justify-content: space-between
 			height: 240px
 			margin-top: 50px
-			.input
+			.form-name
+				position: relative
 				height: 60px
 				width: 500px
-				border: 1px solid #CCCCCC
-				border-radius: 5px
-				padding-left: 24px 
-				@include placeholder
+				input
+					position: absolute
+					height: 100%
+					width: 100%
+					border: 1px solid #000000
+					background: transparent
+					outline: none
+					border-radius: 5px
+					font-size: 18px
+					line-height: 24px
+					transition: 0.1s ease
+					padding-left: 24px
+					z-index: 10
+					&:focus
+						border: 1px solid $main-color
+					&:focus + .lable
+						transform: translate( 20px, -31px)
+						color: $main-color		
+						font-size: 13px
+						z-index: 11
+						background-color: #fff
+						padding: 0 5px
+				.lable
+					position: absolute
+					height: 20px
+					margin: auto 
+					top: 0
+					bottom: 0
+					padding-left: 24px
+					color: #666666
+					font-family: "Muller-Regular"
+					font-size: 18px
+					line-height: 24px
+					transition: 0.2s ease
+
+
+					
+
+
 		button    
 			@include button
 			margin-top: 48px

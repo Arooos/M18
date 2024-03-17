@@ -39,6 +39,7 @@ function rollSlider(){
     sliderLine.style.transform = 'translate(-' + count * width + 'px)';
 };
 
+//модальное окно 
 
 var modal = document.getElementById('modal');
 var modal_sent = document.getElementById('sent')

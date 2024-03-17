@@ -188,7 +188,7 @@ html body .promo .video .play-btn .text {
   text-align: center;
   margin-top: 10px;
 }
-html body .promo .video .call {
+html body .promo .call {
   position: absolute;
   top: 50px;
   right: 89px;
@@ -196,18 +196,18 @@ html body .promo .video .call {
   align-items: center;
   text-decoration: none;
 }
-html body .promo .video .call:hover {
+html body .promo .call:hover {
   cursor: pointer;
 }
-html body .promo .video .call:hover .text {
+html body .promo .call:hover .text {
   color: #F9572E;
 }
-html body .promo .video .call .img {
+html body .promo .call .img {
   width: 24px;
   height: 24px;
   margin-right: 7px;
 }
-html body .promo .video .call .text {
+html body .promo .call .text {
   font-family: "Muller-Medium";
   font-size: 16px;
   font-weight: 100;
@@ -302,6 +302,9 @@ html body .slider .container .slider-wrap .slider-line .item .slider-descr {
   line-height: 20px;
   color: #666666;
 }
+html body .slider .container .slider-wrap .slider-line .item img {
+  width: 80%;
+}
 html body .slider .container .slider-button {
   position: absolute;
   display: flex;
@@ -357,27 +360,48 @@ html body .subscribe .wrap .form {
   height: 240px;
   margin-top: 50px;
 }
-html body .subscribe .wrap .form .input {
+html body .subscribe .wrap .form .form-name {
+  position: relative;
   height: 60px;
   width: 500px;
-  border: 1px solid #CCCCCC;
-  border-radius: 5px;
-  padding-left: 24px;
 }
-html body .subscribe .wrap .form .input::-webkit-input-placeholder {
+html body .subscribe .wrap .form .form-name input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #000000;
+  background: transparent;
+  outline: none;
+  border-radius: 5px;
+  font-size: 18px;
+  line-height: 24px;
+  transition: 0.1s ease;
+  padding-left: 24px;
+  z-index: 10;
+}
+html body .subscribe .wrap .form .form-name input:focus {
+  border: 1px solid #F9572E;
+}
+html body .subscribe .wrap .form .form-name input:focus + .lable {
+  transform: translate(20px, -31px);
+  color: #F9572E;
+  font-size: 13px;
+  z-index: 11;
+  background-color: #fff;
+  padding: 0 5px;
+}
+html body .subscribe .wrap .form .form-name .lable {
+  position: absolute;
+  height: 20px;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  padding-left: 24px;
   color: #666666;
   font-family: "Muller-Regular";
   font-size: 18px;
   line-height: 24px;
-}
-html body .subscribe .wrap .form .input:-moz-placeholder {
-  color: #666666;
-}
-html body .subscribe .wrap .form .input::-moz-placeholder {
-  color: #666666;
-}
-html body .subscribe .wrap .form .input:-ms-input-placeholder {
-  color: #666666;
+  transition: 0.2s ease;
 }
 html body .subscribe .wrap button {
   border: 0;
@@ -532,7 +556,7 @@ html body .footer .corp {
 html body .modal {
   position: fixed;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   top: 0;
   left: 0;
   z-index: 10;
@@ -567,7 +591,7 @@ html body .modal .modal-bg .modal-sent {
   z-index: 11;
   opacity: 0;
   visibility: hidden;
-  transition: 0.5s;
+  transition: 0.7s;
 }
 html body .modal .modal-bg .modal-sent.active {
   opacity: 1;
@@ -575,10 +599,10 @@ html body .modal .modal-bg .modal-sent.active {
 }
 html body .modal .modal-bg .modal-sent .modal-close {
   position: absolute;
-  top: 0px;
-  right: -60px;
-  font-size: 70px;
-  line-height: 40px;
+  top: 0;
+  right: -6rem;
+  font-size: 7rem;
+  line-height: 4rem;
   color: #ffffff;
   cursor: pointer;
 }
@@ -606,4 +630,97 @@ html body .modal .modal-bg .modal-sent .wrap .text {
   line-height: 2.4rem;
   font-weight: 200;
   font-family: "Muller-Regular";
+}
+
+@media (max-width: 1440px) {
+  h1 {
+    font-size: 50px;
+    line-height: 54px;
+  }
+  html body .promo .descr .item .subtitle {
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 42px;
+    line-height: 46px;
+  }
+  h2, h3, p {
+    text-align: center;
+  }
+  .subtitle {
+    text-align: center;
+  }
+  .container {
+    width: 850px;
+  }
+  html {
+    font-size: 45%;
+  }
+  html body .advantages-item {
+    flex-direction: column;
+    height: 100%;
+    width: 55%;
+    align-content: center;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+  html body .advantages-item .flex-basis {
+    flex-basis: 160px;
+  }
+}
+@media (max-width: 979px) {
+  h1 {
+    text-align: center;
+  }
+  .container {
+    width: 700px;
+  }
+  html {
+    font-size: 35%;
+  }
+  html body .promo .descr {
+    width: 100vw;
+    height: 50vh;
+    flex-direction: column;
+  }
+  html body .promo .descr .item {
+    position: relative;
+    padding-top: 150px;
+  }
+  html body .promo .descr .scroll {
+    display: none;
+  }
+  html body .promo .video {
+    width: 100vw;
+    height: 50vh;
+    position: relative;
+  }
+  html body .promo .video .bg-video {
+    width: 100vw;
+  }
+  html body .promo .call {
+    top: 62px;
+  }
+  html body .slider .container .slider-button {
+    right: 25px;
+  }
+  html body .slider .container .slider-wrap .slider-line .item {
+    width: 118px;
+  }
+  html body .subscribe h2 {
+    width: 75%;
+  }
+  html body .footer .wrap .data {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 180px;
+    margin-top: 35px;
+  }
+  html body .footer .line {
+    margin-top: 35px;
+  }
 }/*# sourceMappingURL=style.min.css.map */
